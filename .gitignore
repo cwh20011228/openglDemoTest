@@ -1,0 +1,99 @@
+############################################
+# OS / Editor
+############################################
+.DS_Store
+Thumbs.db
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+############################################
+# Visual Studio
+############################################
+.vs/
+*.VC.db
+*.VC.opendb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+############################################
+# Build outputs (MSVC / CMake)
+############################################
+build/
+Build/
+out/
+bin/
+lib/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+install_manifest.txt
+Makefile
+
+############################################
+# Visual Studio build artifacts
+############################################
+Debug/
+Release/
+RelWithDebInfo/
+MinSizeRel/
+x64/
+x86/
+Win32/
+
+*.obj
+*.o
+*.lo
+*.a
+*.lib
+*.dll
+*.exe
+*.exp
+*.ilk
+*.pdb
+*.idb
+*.ipdb
+*.iobj
+*.pch
+*.sdf
+*.tlog
+*.log
+
+############################################
+# CMake generated project files
+############################################
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+############################################
+# OpenGL / graphics temp outputs
+############################################
+*.blend1
+*.tmp
+*.bak
+
+############################################
+# Assets / Third-party binaries (your case)
+############################################
+assets/
+thirdParty
+
+############################################
+# If you keep thirdParty source headers, keep them
+# (do not ignore thirdParty/include/)
+############################################
+
+############################################
+# Optional: ignore runtime generated files
+############################################
+*.cache
+*.dat
+*.bin
+*.sav
