@@ -406,6 +406,7 @@ int main(int argc, char* argv[]) {
     // 使用Renderbuffer（RBO）作为颜色附件，因为读写性能在大多数硬件上都优于纹理附件
     unsigned int msaaFBO, rbo;
 	int samples = std::min(4, maxSamples); // 使用4x MSAA，当然也可以使用更高的采样数
+    //int samples = maxSamples;
 
     glGenFramebuffers(1, &msaaFBO);
     glBindFramebuffer(GL_FRAMEBUFFER, msaaFBO);
