@@ -29,6 +29,7 @@ link_directories(
 
 # 将wrapper文件夹纳入编译系统
 add_subdirectory(wrapper)
+add_subdirectory(imgui)
 
 # 编译链接cpp文件，生成可执行程序openglStudy
 add_executable(MSAA_TestDemo  "MsaaDemo.cpp" "glad.c") 
@@ -36,5 +37,5 @@ add_executable(Pixel_Bead_Art "PixelBeadArt.cpp" "glad.c")
 
 # 将glfw3.lib wrapper app链接到openglStudy
 target_link_libraries(MSAA_TestDemo glfw3.lib)
-target_link_libraries(Pixel_Bead_Art glfw3.lib)
+target_link_libraries(Pixel_Bead_Art glfw3.lib imguilib Comdlg32 Ole32 Windowscodecs)
 #target_link_libraries(openglStudy glfw3.lib assimp-vc143-mtd.lib zlibstaticd.lib  wrapper imguilib)
