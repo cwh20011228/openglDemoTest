@@ -5,7 +5,8 @@ cmake_minimum_required(VERSION 3.12)
 project(LearnOpenGL)
 
 # 本工程支持的c++版本库
-set(CMAKE_CXX_STARDARD 17)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # 往项目中加入一个全局的预编译宏
 add_definitions(-DDEBUG)
@@ -35,9 +36,11 @@ add_subdirectory(imgui)
 add_executable(MSAA_TestDemo  "MsaaDemo.cpp" "glad.c") 
 add_executable(Pixel_Bead_Art "PixelBeadArt.cpp" "glad.c")
 add_executable(glHint_Study  "glHint学习.cpp" "glad.c")
+add_executable(Compute_Shader_Demo "ComputeShaderDemo.cpp" "glad.c")
 
 # 将glfw3.lib wrapper app链接到openglStudy
 target_link_libraries(MSAA_TestDemo glfw3.lib)
 target_link_libraries(Pixel_Bead_Art glfw3.lib imguilib Comdlg32 Ole32 Windowscodecs)
 target_link_libraries(glHint_Study glfw3.lib)
+target_link_libraries(Compute_Shader_Demo glfw3.lib)
 #target_link_libraries(openglStudy glfw3.lib assimp-vc143-mtd.lib zlibstaticd.lib  wrapper imguilib)
